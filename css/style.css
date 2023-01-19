@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  background-image: linear-gradient(315deg, #045de9 0%, #016d8b 74%);
+}
+
+.wrapper {
+  width: 740px;
+  box-shadow: 0 0 10px #000;
+  border-radius: 10px;
+  background-color: #e8e4e4;
+}
+
+form {
+  padding: 40px;
+  font-size: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.form-box {
+  margin-bottom: 5px;
+}
+
+.form-box label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.form-box input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.last {
+  margin-bottom: -3px;
+}
+
+.name-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.form-text{
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.pass-info {
+  color: rgba(0, 0, 0, 0.404);
+}
+.pass-forgot{
+  color: rgb(30, 190, 137);
+}
+.checkbox {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  
+}
+
+.form-box.error input {
+  border: 1px solid rgb(0, 137, 250);
+  background-color: rgba(0, 137, 250, 0.1);
+}
+
+.form-box .error-text {
+  visibility: hidden;
+  margin: 5px 0 0 10px;
+  font-size: 14px;
+  color: rgb(0, 137, 250);
+}
+
+.form-box.error .error-text {
+  visibility: visible;
+}
+
+.control-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.register,
+.close {
+  display: block;
+  padding: 10px 0;
+  margin-left: 10px;
+  width: 100%;
+  font-size: 18px;
+  background-color: rgb(0, 96, 175);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.unchecked {
+  background-color: rgb(85, 113, 136)
+}
+
+.register:hover,
+.close:hover {
+  background-color: rgb(0, 62, 112);
+}
+
+.popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: -300px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 200px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  border: 2px solid black;
+  transition: top 0.5s;
+}
+
+.popup p {
+  font-size: 28px;
+}
+
+.popup button {
+  margin-top: 20px;
+}
+
+.show-popup {
+  top: 150px;
+}
